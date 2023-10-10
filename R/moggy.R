@@ -22,7 +22,7 @@ sec_ref <- function(ref) {
 }
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#' Add markdown wrappers around text
+#' Add markup for inline code
 #' 
 #' @param x text
 #' @return text wrapped in markup
@@ -34,10 +34,27 @@ as_code <- function(x) {
 }
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#' @rdname as_code
+#' Add markup for bold text
+#' 
+#' @param x text
+#' @return text wrapped in markup
+#'
+#' @export
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 as_bold <- function(x) {
   paste0("**", x, "**")
+}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#' Add markup for bold text
+#' 
+#' @param x text
+#' @return text wrapped in markup
+#'
+#' @export
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+as_italic <- function(x) {
+  paste0("*", x, "*")
 }
 
 

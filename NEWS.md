@@ -1,3 +1,3 @@
-# moggy 0.1.0  2023-10-09
+# moggy 0.1.0
 
 * Initial release
